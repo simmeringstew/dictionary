@@ -39,7 +39,7 @@
     border-radius: 20px;
     left: 0.3em;
     bottom: 0.3em;
-    background-color: var(--clr-background);
+    background-color: #F9FAFB;
     transition: .4s;
 }
 
@@ -62,7 +62,7 @@ input:checked + .slider:before {
     align-items: center;
 }
 
-.bi-book, .bi-moon, .bi-sun {
+.bi-book, .bi-moon {
     fill: var(--clr-text-secondary);
 }
 
@@ -86,6 +86,7 @@ select {
     -moz-appearance: none;
     appearance: none;
     background-color: var(--clr-background);
+    color: var(--clr-text);
     cursor: pointer;
     border: transparent;
     font-size: 1.2rem;
