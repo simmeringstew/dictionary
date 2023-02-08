@@ -75,6 +75,10 @@ input:checked + .slider:before {
 .select-box {
     position: relative;
     border-right: 1px solid var(--clr-text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-right: 1rem;
 }
 
 select {
@@ -85,7 +89,7 @@ select {
     cursor: pointer;
     border: transparent;
     font-size: 1.2rem;
-    font-weight: 700
+    font-weight: 700;
 }
 
 select:focus {
@@ -93,9 +97,5 @@ select:focus {
 }
 
 .select-box > svg {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(-100%, -50%);
     fill: var(--clr-dark-purple);
 }
