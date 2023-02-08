@@ -1,8 +1,11 @@
-import './App.css';
+import TopBar from "./components/TopBar";
+import "./App.css";
 
 const App = () => {
   return(
-    <h1>Dictionary</h1>
+    <div className="container px-4">
+      <TopBar />
+    </div>
   );
 }
 

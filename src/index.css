@@ -62,7 +62,7 @@ list-style: none;
   padding: 0;
 }
 
-img, picture, svg, video {
+img, picture, video {
   display: block;
   width: 100%;
 }

@@ -1,0 +1,101 @@
+/* The switch - the box around the slider */
+.switch {
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+   
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+   
+.switch-text {
+    font-size: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--clr-text);
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: var(--clr-background);
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--clr-light-purple);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--clr-light-purple);
+}
+
+input:checked + .slider:before {
+    transform: translateX(1.5em);
+}
+
+.bar {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bi-book, .bi-moon, .bi-sun {
+    fill: var(--clr-text-secondary);
+}
+
+.bar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.select-box {
+    position: relative;
+    border-right: 1px solid var(--clr-text-secondary);
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--clr-background);
+    cursor: pointer;
+    border: transparent;
+    font-size: 1.2rem;
+    font-weight: 700
+}
+
+select:focus {
+    outline: none;
+}
+
+.select-box > svg {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-100%, -50%);
+    fill: var(--clr-dark-purple);
+}
