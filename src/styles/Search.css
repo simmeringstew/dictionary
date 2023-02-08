@@ -1,0 +1,28 @@
+.search-box {
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.6rem 0.3rem;
+    border-radius: 12px;
+    border: transparent;
+    background-color: var(--clr-gray);
+}
+
+.search-input:focus {
+    outline: transparent;
+}
+
+.search-box > button {
+    border: transparent;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translate(-200%, -40%);
+    cursor: pointer;
+}
+
+.bi-search {
+    fill: var(--clr-light-purple);
+}
