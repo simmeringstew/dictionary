@@ -10,6 +10,18 @@ const App = () => {
   const changeSearch = (value) => {
     setSearch(value.toLowerCase());
   }
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    if (search !== "") {
+      axios
+        .get(`https://api.dictionaryapi.dev/api/v2/entries/en/${search}`)
+        .then(response => {
+          setData(response.data);
+        });
+    } else {
+      setData([]);
+    }
+  }, [search]);
 
   return(
     <div className="container px-4">
