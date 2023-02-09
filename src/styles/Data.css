@@ -34,3 +34,33 @@
 .audio > svg {
     fill: var(--clr-dark-purple);
 }
+
+.source {
+    margin-bottom: 2rem;
+}
+
+.source > hr {
+    background-color: var(--clr-text-secondary);
+    width: 100%;
+    height: 1px;
+    border-width: 0;
+    margin-bottom: 0.5rem;
+}
+
+.source-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.source-link > span {
+    color: var(--clr-text-secondary);
+}
+
+.source-link > a {
+    color: var(--clr-text);
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
