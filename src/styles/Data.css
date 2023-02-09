@@ -64,3 +64,11 @@
     align-items: center;
     gap: 0.5rem;
 }
+
+.error {
+    margin-top: 1rem;
+}
+
+.error > h1 {
+    font-size: 2rem;
+}

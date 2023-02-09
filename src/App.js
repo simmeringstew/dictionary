@@ -13,31 +13,29 @@ const App = () => {
   const changeSearch = (value) => {
     setSearch(value.toLowerCase());
   }
-  const [data, setData] = useState([...wordData]);
+  const [data, setData] = useState([]);
 
-
-  // proper use effect for getting data from the api
-  // useEffect(() => {
-  //   if (search !== "") {
-  //     axios
-  //       .get(`https://api.dictionaryapi.dev/api/v2/entries/en/${search}`)
-  //       .then(response => {
-  //         setData(response.data);
-  //       })
-  //       .catch(error => {
-  //         setData(["error"]);
-  //       });
-  //   } else {
-  //     setData([]);
-  //   }
-  // }, [search]);
+  useEffect(() => {
+    if (search !== "") {
+      axios
+        .get(`https://api.dictionaryapi.dev/api/v2/entries/en/${search}`)
+        .then(response => {
+          setData(response.data);
+        })
+        .catch(error => {
+          setData(["error"]);
+        });
+    } else {
+      setData([]);
+    }
+  }, [search]);
 
 
   return(
     <div className="container px-4">
       <TopBar />
       <Search previousSearch={search} changeSearch={changeSearch} />
-      <Data data={data[0]} />
+      <Data data={data} />
     </div>
   );
 }
