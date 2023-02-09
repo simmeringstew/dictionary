@@ -1,5 +1,5 @@
 .meaning {
-    margin: 1rem auto;
+    margin: 2rem auto;
 }
 
 .meaning-title {
@@ -18,4 +18,17 @@
     height: 1px;
     border-width: 0;
     background-color: var(--clr-text-secondary);
+}
+
+.meaning h4 {
+    color: var(--clr-text-secondary);
+    margin: 1.5rem auto;
+}
+
+.meaning-list {
+    margin-left: 2rem;
+}
+
+.example {
+    color: var(--clr-text-secondary);
 }
