@@ -99,5 +99,5 @@ select:focus {
 }
 
 .select-box > svg {
-    fill: var(--clr-dark-purple);
+    fill: var(--clr-light-purple);
 }
