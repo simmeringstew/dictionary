@@ -1,0 +1,36 @@
+.phonetics {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phonetics-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.phonetics-text > h1 {
+    font-size: 2.5rem;
+}
+
+.phonetics-text > h2 {
+    font-size: 1.2rem;
+    color: var(--clr-light-purple);
+}
+
+.audio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-light-purple);
+    border: transparent;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.audio > svg {
+    fill: var(--clr-dark-purple);
+}
