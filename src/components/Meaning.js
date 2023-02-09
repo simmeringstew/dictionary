@@ -1,4 +1,6 @@
 import Defenition from "./Definition";
+import Synonyms from "./Synonyms";
+import Antonyms from "./Antonyms";
 import "../styles/Meaning.css";
 
 const Meaning = ({ meaning }) => {
@@ -14,6 +16,8 @@ const Meaning = ({ meaning }) => {
                 <Defenition key={definition.definition} definition={definition} />
                 )}
             </ul>
+            <Synonyms meaning={meaning} />
+            <Antonyms meaning={meaning} />
         </div>
     );
 }

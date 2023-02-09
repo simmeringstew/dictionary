@@ -29,6 +29,20 @@
     margin-left: 2rem;
 }
 
+.meaning-list-item {
+    margin-bottom: 0.5rem;
+}
+
 .example {
     color: var(--clr-text-secondary);
+}
+
+.synonym-antonym-title {
+    color: var(--clr-text-secondary);
+    margin-right: 1rem;
+}
+
+.synonym-antonym-text {
+    color: var(--clr-light-purple);
+    margin-top: 1rem;
 }

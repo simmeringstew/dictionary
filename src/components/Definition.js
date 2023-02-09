@@ -2,7 +2,7 @@ import Example from "./Example";
 
 const Definition = ({ definition }) => {
     return(
-        <li>
+        <li className="meaning-list-item">
             {definition.definition}
             <Example definition={definition} />
         </li>
