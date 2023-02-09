@@ -5,8 +5,6 @@ import Search from "./components/Search";
 import Data from "./components/Data";
 import "./App.css";
 
-import wordData from "./testData.json";
-
 const App = () => {
 
   const [search, setSearch] = useState("");
