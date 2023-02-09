@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import TopBar from "./components/TopBar";
 import Search from "./components/Search";
+import Data from "./components/Data";
 import "./App.css";
 
 const App = () => {
@@ -17,6 +18,9 @@ const App = () => {
         .get(`https://api.dictionaryapi.dev/api/v2/entries/en/${search}`)
         .then(response => {
           setData(response.data);
+        })
+        .catch(error => {
+          setData(["error"]);
         });
     } else {
       setData([]);
@@ -27,6 +31,7 @@ const App = () => {
     <div className="container px-4">
       <TopBar />
       <Search previousSearch={search} changeSearch={changeSearch} />
+      <Data data={data} />
     </div>
   );
 }
