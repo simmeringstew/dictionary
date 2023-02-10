@@ -3,8 +3,10 @@ import "../styles/Data.css";
 
 const Data = ({ data }) => {
 
+    console.log(data);
+
     const playAudio = () => {
-        new Audio(`${data[0].phonetics[1].audio}`).play();
+        new Audio(`${data[0].phonetics[0].audio}`).play();
     }
 
     if (data.length === 0) {
@@ -25,7 +27,7 @@ const Data = ({ data }) => {
             <div className="phonetics">
                 <div className="phonetics-text">
                     <h1>{data[0].word}</h1>
-                    <h2>{data[0].phonetics[1].text}</h2>
+                    <h2>{data[0].phonetics[0].text}</h2>
                 </div>
                 <button type="button" className="audio" onClick={playAudio}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-play-fill" viewBox="0 0 16 16">
