@@ -3,8 +3,6 @@ import "../styles/Data.css";
 
 const Data = ({ data }) => {
 
-    console.log(data);
-
     const playAudio = () => {
         new Audio(`${data[0].phonetics[0].audio}`).play();
     }
@@ -15,10 +13,10 @@ const Data = ({ data }) => {
 
     else if (data[0] === "error") {
         return(
-            <div className="error">
+            <main className="error">
                 <h1>Oops...</h1>
                 <p>Looks like there was an issue with your search...</p>
-            </div>
+            </main>
         );
     }
     
