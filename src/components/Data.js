@@ -23,8 +23,8 @@ const Data = ({ data }) => {
     }
     
     return(
-        <div className="word-data">
-            <div className="phonetics">
+        <main className="word-data">
+            <section className="phonetics">
                 <div className="phonetics-text">
                     <h1>{data[0].word}</h1>
                     <h2>{data[0].phonetics[0].text}</h2>
@@ -34,13 +34,13 @@ const Data = ({ data }) => {
                         <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
                     </svg>
                 </button>
-            </div>
-            <div className="meanings">
+            </section>
+            <section className="meanings">
                 {data[0].meanings.map(meaning =>
                 <Meaning key={meaning.partOfSpeech} meaning={meaning} />
                 )}
-            </div>
-            <div className="source">
+            </section>
+            <section className="source">
                 <hr />
                 <div className="source-link">
                     <span>Source</span>
@@ -52,8 +52,8 @@ const Data = ({ data }) => {
                         </svg>
                     </a>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
     );
 }
 

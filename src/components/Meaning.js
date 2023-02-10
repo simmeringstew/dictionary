@@ -5,7 +5,7 @@ import "../styles/Meaning.css";
 
 const Meaning = ({ meaning }) => {
     return(
-        <div className="meaning">
+        <article className="meaning">
             <div className="meaning-title">
                 <h3>{meaning.partOfSpeech}</h3>
                 <hr />
@@ -18,7 +18,7 @@ const Meaning = ({ meaning }) => {
             </ul>
             <Synonyms meaning={meaning} />
             <Antonyms meaning={meaning} />
-        </div>
+        </article>
     );
 }
 
