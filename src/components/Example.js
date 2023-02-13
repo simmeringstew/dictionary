@@ -3,7 +3,7 @@ const Example = ({ definition }) => {
         return;
     }
     return (
-        <p className="example">"{definition.example}"</p>
+        <p className="example" data-testid="example">"{definition.example}"</p>
     ); 
 }
 
