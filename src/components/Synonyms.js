@@ -6,7 +6,7 @@ const Synonyms = ({ meaning }) => {
         return;
     }
     return (
-        <p className="synonym-antonym-text"><span className="synonym-antonym-title">Synonyms</span>{synonyms.join(", ")}</p>
+        <p className="synonym-antonym-text" data-testid="synonym"><span className="synonym-antonym-title">Synonyms</span>{synonyms.join(", ")}</p>
     );
 }
 
