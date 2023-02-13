@@ -17,5 +17,5 @@ test("If there is a definition it is rendered correctly", () => {
     }
     render(<Example definition={definition} />);
     const example = screen.getByTestId("example");
-    expect(example.textContent).toBe("example test");
+    expect(example.textContent).toBe(`"example test"`);
 });
