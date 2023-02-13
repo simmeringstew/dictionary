@@ -8,7 +8,6 @@ test("If there are antonyms they are displayed", () => {
         antonyms: ["test", "another test"]
     };
     render(<Antonyms meaning={meaning} />);
-    console.log(meaning);
     const antonym = screen.getByTestId("antonym");
     expect(antonym.textContent).toBe("Antonymstest, another test");
 });
